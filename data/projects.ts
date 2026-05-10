@@ -152,7 +152,7 @@ export const projects: Project[] = [
     logo: "/logos/project4_icon.svg",
     link: "https://github.com/ngophuc29/KT-TKPM_PROJECT",
     hasWeb: true,
-    projectUrl: "https://example.com/ecommerce-microservices",
+    projectUrl: "https://kt-tkpm-project.vercel.app/home",
     images: [
       "/projects/p4-0.png",
       "/projects/p4-1.png",
