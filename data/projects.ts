@@ -1,18 +1,42 @@
-export interface Project {
-  title: string;
-  description: string;
-  logo: string;
-  link: string;
-  slug: string;
-  tech: { icon: string; name: string }[];
-}
+import type { Project } from "@/types";
 
 export const projects: Project[] = [
   {
     title: "Smart dental healthcare (Web & Mobile)",
-    description: "Nền tảng chăm sóc sức khỏe răng miệng thông minh, đặt lịch, hồ sơ, tư vấn từ xa, thanh toán MoMo v.v.. Tích hợp phân tích AI và hỗ trợ đa nền tảng.",
+    description:
+      "Nền tảng chăm sóc sức khỏe răng miệng thông minh cho bác sĩ và bệnh nhân, đặt lịch, hồ sơ, tư vấn từ xa, thanh toán MoMo v.v.. Tích hợp phân tích AI và hỗ trợ đa nền tảng.",
     logo: "/logos/project1_icon.svg",
     link: "https://github.com/GiaHuyyy/Smart-dental-healthcare",
+    images: [
+      "/projects/p1-0.png",
+      "/projects/p1-1.png",
+      "/projects/p1-2.png",
+      "/projects/p1-3.png",
+      "/projects/p1-4.png",
+      "/projects/p1-5.png",
+      "/projects/p1-6.png",
+      "/projects/p1-7.png",
+      "/projects/p1-8.png",
+      "/projects/p1-9.png",
+      "/projects/p1-10.png",
+      "/projects/p1-11.png",
+      "/projects/p1-12.png",
+      "/projects/p1-13.png",
+      "/projects/p1-26.jpg",
+      "/projects/p1-14.jpg",
+      "/projects/p1-15.jpg",
+      "/projects/p1-16.jpg",
+      "/projects/p1-17.jpg",
+      "/projects/p1-18.jpg",
+      "/projects/p1-19.jpg",
+      "/projects/p1-20.jpg",
+      "/projects/p1-21.jpg",
+      "/projects/p1-22.jpg",
+      "/projects/p1-23.jpg",
+      "/projects/p1-24.jpg",
+      "/projects/p1-25.jpg",
+      "/projects/p1-27.jpg",
+    ],
     tech: [
       { icon: "/logos/next_icon.svg", name: "Next.js" },
       { icon: "/logos/react_icon.svg", name: "React.js" },
@@ -38,9 +62,35 @@ export const projects: Project[] = [
   },
   {
     title: "Chat app (Web & Mobile)",
-    description: "Ứng dụng nhắn tin thời gian thực đa nền tảng lấy ý tưởng từ 'Zalo' với Socket.IO, WebRTC và JWT v.v..",
+    description:
+      "Ứng dụng nhắn tin thời gian thực đa nền tảng lấy ý tưởng từ 'Zalo' với Socket.IO, WebRTC và JWT v.v..",
     logo: "/logos/project2_icon.svg",
     link: "https://github.com/GiaHuyyy/CNM-ChatApp",
+    images: [
+      "/projects/p2-0.png",
+      "/projects/p2-1.png",
+      "/projects/p2-2.png",
+      "/projects/p2-3.png",
+      "/projects/p2-4.png",
+      "/projects/p2-5.png",
+      "/projects/p2-6.png",
+      "/projects/p2-7.png",
+      "/projects/p2-8.png",
+      "/projects/p2-9.png",
+      "/projects/p2-10.png",
+      "/projects/p2-11.png",
+      "/projects/p2-12.png",
+      "/projects/p2-13.png",
+      "/projects/p2-14.png",
+      "/projects/p2-15.png",
+      "/projects/p2-16.png",
+      "/projects/p2-17.png",
+      "/projects/p2-18.png",
+      "/projects/p2-19.png",
+      "/projects/p2-20.png",
+      "/projects/p2-21.png",
+      "/projects/p2-22.png",
+    ],
     tech: [
       { icon: "/logos/react_icon.svg", name: "React.js" },
       { icon: "/logos/tailwind_icon.svg", name: "Tailwind CSS" },
@@ -60,6 +110,7 @@ export const projects: Project[] = [
     description: "Ứng dụng kiểm tra sức khỏe cá nhân, theo dõi chỉ số và cung cấp gợi ý cải thiện lối sống.",
     logo: "/logos/project3_icon.svg",
     link: "https://github.com/GiaHuyyy/healthy-check-app",
+    images: [],
     tech: [
       { icon: "/logos/react_icon.svg", name: "React.js" },
       { icon: "/logos/expo_icon.svg", name: "Expo" },
@@ -75,6 +126,7 @@ export const projects: Project[] = [
     description: "Nền tảng thương mại điện tử theo kiến trúc microservice, hỗ trợ thanh toán và CI/CD.",
     logo: "/logos/project4_icon.svg",
     link: "https://github.com/ngophuc29/KT-TKPM_PROJECT",
+    images: [],
     tech: [
       { icon: "/logos/vite_icon.svg", name: "Vite" },
       { icon: "/logos/react_icon.svg", name: "React.js" },
