@@ -96,6 +96,7 @@ export const projects: Project[] = [
       "/projects/p2-22.png",
     ],
     tech: [
+      { icon: "/logos/vite_icon.svg", name: "Vite" },
       { icon: "/logos/react_icon.svg", name: "React.js" },
       { icon: "/logos/tailwind_icon.svg", name: "Tailwind CSS" },
       { icon: "/logos/expo_icon.svg", name: "Expo" },
