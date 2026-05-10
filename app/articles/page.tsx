@@ -45,7 +45,7 @@ export default async function ArticlesPage() {
             </div>
           </div>
 
-          <a href="KTPM_HK1_2025-2026_BBKH" target="_blank" rel="noopener noreferrer" className={styles.profileLink}>
+          <a href="https://api.iuh.io.vn//temp/KTPM_HK1_2025-2026_BBKH_21032471_1765791899866.pdf" target="_blank" rel="noopener noreferrer" className={styles.profileLink}>
             <span>KTPM_HK1_2025-2026_BBKH</span>
             <VscLinkExternal size={14} />
           </a>

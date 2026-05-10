@@ -1,9 +1,10 @@
 "use client";
 
-import { VscGithub, VscMail, VscLinkExternal } from "react-icons/vsc";
+import { VscGithub, VscMail } from "react-icons/vsc";
 import Link from "next/link";
 
 import styles from "@/styles/AboutPage.module.css";
+import Image from "next/image";
 
 const AboutPage = () => {
   return (
@@ -118,51 +119,330 @@ const AboutPage = () => {
                 <div className={styles.skillCategory}>
                   <h4 className={styles.skillTitle}>Frontend</h4>
                   <div className={styles.skillTags}>
-                    <span className={styles.skillTag}>Next.js</span>
-                    <span className={styles.skillTag}>React</span>
-                    <span className={styles.skillTag}>React Native</span>
-                    <span className={styles.skillTag}>Shadcn UI</span>
-                    <span className={styles.skillTag}>Tailwind CSS</span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/next_icon.svg"
+                        alt="Next.js"
+                        width={18}
+                        height={18}
+                      />
+                      Next.js
+                      </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/react_icon.svg"
+                        alt="React.js"
+                        width={18}
+                        height={18}
+                      />
+                      React.js
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/vite_icon.svg"
+                        alt="Vite"
+                        width={18}
+                        height={18}
+                      />
+                      Vite
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/react_icon.svg"
+                        alt="React Native"
+                        width={18}
+                        height={18}
+                      />
+                      React Native
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/sass_icon.svg"
+                        alt="Sass"
+                        width={18}
+                        height={18}
+                      />
+                      Sass
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/shadcn_ui_icon.svg"
+                        alt="Shadcn UI"
+                        width={18}
+                        height={18}
+                      />
+                      Shadcn UI
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/tailwind_icon.svg"
+                        alt="Tailwind CSS"
+                        width={18}
+                        height={18}
+                      />
+                      Tailwind CSS
+                    </span>
                   </div>
                 </div>
 
                 <div className={styles.skillCategory}>
                   <h4 className={styles.skillTitle}>Database</h4>
                   <div className={styles.skillTags}>
-                    <span className={styles.skillTag}>MySQL</span>
-                    <span className={styles.skillTag}>MongoDB</span>
-                    <span className={styles.skillTag}>Redis</span>
-                    <span className={styles.skillTag}>Appwrite</span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/mysql_icon.svg"
+                        alt="MySQL"
+                        width={18}
+                        height={18}
+                      />
+                      MySQL
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/mongo_icon.svg"
+                        alt="MongoDB"
+                        width={18}
+                        height={18}
+                      />
+                      MongoDB
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/redis_icon.svg"
+                        alt="Redis"
+                        width={18}
+                        height={18}
+                      />
+                      Redis
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/appwrite_icon.svg"
+                        alt="Appwrite"
+                        width={18}
+                        height={18}
+                      />
+                      Appwrite
+                    </span>
                   </div>
                 </div>
 
                 <div className={styles.skillCategory}>
                   <h4 className={styles.skillTitle}>Backend</h4>
                   <div className={styles.skillTags}>
-                    <span className={styles.skillTag}>Nestjs</span>
-                    <span className={styles.skillTag}>Node.js</span>
-                    <span className={styles.skillTag}>Express.js</span>
-                    <span className={styles.skillTag}>Java</span>
-                    <span className={styles.skillTag}>WebSocket (Socket.IO)</span>
-                    <span className={styles.skillTag}>JWT</span>
-                    <span className={styles.skillTag}>RESTful APIs</span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/nest_icon.svg"
+                        alt="Nestjs"
+                        width={18}
+                        height={18}
+                      />
+                      Nestjs
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/node_icon.svg"
+                        alt="Node.js"
+                        width={18}
+                        height={18}
+                      />
+                      Node.js
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/express_icon.svg"
+                        alt="Express.js"
+                        width={18}
+                        height={18}
+                      />
+                      Express.js
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/java_icon.svg"
+                        alt="Java"
+                        width={18}
+                        height={18}
+                      />
+                      Java
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/socket_icon.svg"
+                        alt="WebSocket (Socket.IO)"
+                        width={18}
+                        height={18}
+                      />
+                      WebSocket (Socket.IO)
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/jwt_icon.svg"
+                        alt="JWT"
+                        width={18}
+                        height={18}
+                      />
+                      JWT
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/rest_api_icon.svg"
+                        alt="RESTful APIs"
+                        width={18}
+                        height={18}
+                      />
+                      RESTful APIs
+                    </span>
                   </div>
                 </div>
 
                 <div className={styles.skillCategory}>
                   <h4 className={styles.skillTitle}>DevOps & Tools</h4>
                   <div className={styles.skillTags}>
-                    <span className={styles.skillTag}>Git/GitHub</span>
-                    <span className={styles.skillTag}>VS Code</span>
-                    <span className={styles.skillTag}>Docker</span>
-                    <span className={styles.skillTag}>Jenkins</span>
-                    <span className={styles.skillTag}>Figma</span>
-                    <span className={styles.skillTag}>AWS S3</span>
-                    <span className={styles.skillTag}>Cloudinary</span>
-                    <span className={styles.skillTag}>Redux</span>
-                    <span className={styles.skillTag}>Vercel</span>
-                    <span className={styles.skillTag}>Render.com</span>
-                    <span className={styles.skillTag}>Kiến thức nền tảng về AWS, CI/CD pipelines.</span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src={"/logos/github_icon.svg"}
+                        alt="Git/GitHub"
+                        width={18}
+                        height={18}
+                      />
+                      Git/GitHub
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/vscode_icon.svg"
+                        alt="VS Code"
+                        width={18}
+                        height={18}
+                      />
+                      VS Code
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/postman_icon.svg"
+                        alt="Postman"
+                        width={18}
+                        height={18}
+                      />
+                      Postman
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/eclipse_icon.svg"
+                        alt="Eclipse"
+                        width={18}
+                        height={18}
+                      />
+                      Eclipse
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/spring_icon.svg"
+                        alt="Spring"
+                        width={18}
+                        height={18}
+                      />
+                      Spring
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/android_studio_icon.svg"
+                        alt="Android Studio"
+                        width={18}
+                        height={18}
+                      />
+                      Android Studio
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/expo_icon.svg"
+                        alt="Expo"
+                        width={18}
+                        height={18}
+                      />
+                      Expo Go
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/docker_icon.svg"
+                        alt="Docker"
+                        width={18}
+                        height={18}
+                      />
+                      Docker
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/jenkins_icon.svg"
+                        alt="Jenkins"
+                        width={18}
+                        height={18}
+                      />
+                      Jenkins
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/figma_icon.svg"
+                        alt="Figma"
+                        width={18}
+                        height={18}
+                      />
+                      Figma
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/aws_icon.svg"
+                        alt="AWS S3"
+                        width={18}
+                        height={18}
+                      />
+                      AWS S3
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/cloudinary_icon.svg"
+                        alt="Cloudinary"
+                        width={18}
+                        height={18}
+                      />
+                      Cloudinary
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/redux_icon.svg"
+                        alt="Redux"
+                        width={18}
+                        height={18}
+                      />
+                      Redux
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/vercel_icon.svg"
+                        alt="Vercel"
+                        width={18}
+                        height={18}
+                      />
+                      Vercel
+                    </span>
+                    <span className={styles.skillTag}>
+                      <Image
+                        src="/logos/render_icon.png"
+                        alt="Render.com"
+                        width={18}
+                        height={18}
+                      />
+                      Render.com
+                    </span>
+                    <span className={styles.skillTag}>
+                      {/* <Image
+                        src="/logos/aws_icon.svg"
+                        alt="Kiến thức nền tảng về AWS, CI/CD pipelines."
+                        width={18}
+                        height={18}
+                      /> */}
+                      Kiến thức nền tảng về AWS, CI/CD pipelines.
+                    </span>
                   </div>
                 </div>
               </div>

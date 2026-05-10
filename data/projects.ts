@@ -76,6 +76,7 @@ export const projects: Project[] = [
     logo: "/logos/project4_icon.svg",
     link: "https://github.com/ngophuc29/KT-TKPM_PROJECT",
     tech: [
+      { icon: "/logos/vite_icon.svg", name: "Vite" },
       { icon: "/logos/react_icon.svg", name: "React.js" },
       { icon: "/logos/tailwind_icon.svg", name: "Tailwind CSS" },
       { icon: "/logos/shadcn_ui_icon.svg", name: "Shadcn UI" },

@@ -1,5 +1,4 @@
 import {
-  VscEye,
   VscRepoForked,
   VscStarEmpty,
   VscLinkExternal,
@@ -37,7 +36,7 @@ const RepoCard = ({ repo }: RepoCardProps) => {
   };
 
   return (
-    <a 
+    <a
       href={repo.html_url}
       target="_blank"
       rel="noopener noreferrer"
@@ -47,28 +46,28 @@ const RepoCard = ({ repo }: RepoCardProps) => {
         <h3 className={styles.title}>{repo.name}</h3>
         <VscLinkExternal className={styles.externalIcon} size={14} />
       </div>
-      
+
       <p className={styles.description}>
         {repo.description || 'No description'}
       </p>
-      
+
       <div className={styles.cardFooter}>
         <div className={styles.meta}>
           {repo.language && (
             <span className={styles.language}>
-              <span 
+              <span
                 className={styles.languageDot}
                 style={{ backgroundColor: getLanguageColor(repo.language) }}
               />
               {repo.language}
             </span>
           )}
-          
+
           <div className={styles.stat}>
             <VscStarEmpty size={12} />
             <span>{repo.stargazers_count}</span>
           </div>
-          
+
           <div className={styles.stat}>
             <VscRepoForked size={12} />
             <span>{repo.forks}</span>
