@@ -18,17 +18,17 @@ export const metadata: Metadata = {
     'giahuy',
     'web developer portfolio',
     'tô vũ gia huy web developer',
-    'nitin developer',
+    'giahuy developer',
     'mern stack',
-    'nitin ranganath portfolio',
+    'giahuy ranganath portfolio',
     'vscode-portfolio',
   ],
   openGraph: {
     title: "Tô Vũ Gia Huy's Portfolio",
     description:
       "A full-stack developer building websites that you'd like to use.",
-    images: ['https://imgur.com/4zi5KkQ.png'],
-    url: 'https://vscode-portfolio.vercel.app',
+    // images: ['https://imgur.com/4zi5KkQ.png'],
+    url: 'https://portfoliogiahuy.vercel.app',
   },
   twitter: {
     card: 'summary_large_image',

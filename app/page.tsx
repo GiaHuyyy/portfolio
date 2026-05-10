@@ -1,9 +1,10 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { VscArrowRight, VscGithub, VscMail, VscCode } from 'react-icons/vsc';
+import Link from "next/link";
+import { VscArrowRight, VscGithub, VscMail, VscCode } from "react-icons/vsc";
+import { Typewriter } from "react-simple-typewriter";
 
-import styles from '@/styles/HomePage.module.css';
+import styles from "@/styles/HomePage.module.css";
 
 export default function HomePage() {
   return (
@@ -21,12 +22,24 @@ export default function HomePage() {
 
             <h1 className={styles.name}>Tô Vũ Gia Huy</h1>
 
-            <p className={styles.role}>Lập trình viên Web & Mobile</p>
+            <p className={styles.role} aria-label="Lập trình viên Web & Mobile">
+              <Typewriter
+                words={["Lập trình viên Web & Mobile"]}
+                loop={1}
+                cursor
+                cursorStyle="|"
+                typeSpeed={40}
+                deleteSpeed={0}
+                delaySpeed={1000000}
+              />
+            </p>
 
             <div className={styles.divider} />
 
             <p className={styles.description}>
-              Tôi tạo ra các ứng dụng web và app gọn gàng, hiệu năng cao bằng các công nghệ hiện đại. Chuyên về TypeScript, NextJS, React, React native, NestJS, NodeJS và xây dựng các sản phẩm được người dùng yêu thích.
+              Tôi tạo ra các ứng dụng web và app gọn gàng, hiệu năng cao bằng các công nghệ hiện đại. Chuyên về
+              TypeScript, NextJS, React, React native, NestJS, NodeJS và xây dựng các sản phẩm được người dùng yêu
+              thích.
             </p>
           </div>
 
@@ -42,12 +55,7 @@ export default function HomePage() {
           </div>
 
           <div className={styles.links}>
-            <a
-              href="https://github.com/itsnitinr"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.link}
-            >
+            <a href="https://github.com/GiaHuyyy" target="_blank" rel="noopener noreferrer" className={styles.link}>
               <VscGithub size={16} />
               <span>GitHub</span>
             </a>
