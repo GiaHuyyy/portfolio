@@ -10,7 +10,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     title: "Smart dental healthcare (Web & Mobile)",
-    description: "Nền tảng chăm sóc sức khỏe răng miệng thông minh, đặt lịch, hồ sơ, tư vấn từ xa v.v.. Tích hợp phân tích AI và hỗ trợ đa nền tảng.",
+    description: "Nền tảng chăm sóc sức khỏe răng miệng thông minh, đặt lịch, hồ sơ, tư vấn từ xa, thanh toán MoMo v.v.. Tích hợp phân tích AI và hỗ trợ đa nền tảng.",
     logo: "/logos/project1_icon.svg",
     link: "https://github.com/GiaHuyyy/Smart-dental-healthcare",
     tech: [

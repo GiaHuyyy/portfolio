@@ -1,9 +1,9 @@
-import Image from 'next/image';
-import { VscLinkExternal } from 'react-icons/vsc';
+import Image from "next/image";
+import { VscFileMedia, VscLinkExternal } from "react-icons/vsc";
 
-import { Project } from '@/types';
+import { Project } from "@/types";
 
-import styles from '@/styles/ProjectCard.module.css';
+import styles from "@/styles/ProjectCard.module.css";
 
 interface ProjectCardProps {
   project: Project;
@@ -12,27 +12,16 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project, index }: ProjectCardProps) => {
   return (
-    <a
-      href={project.link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={styles.card}
-    >
+    <div className={styles.card}>
       <div className={styles.number}>
-        <span>{String(index).padStart(2, '0')}</span>
+        <span>{String(index).padStart(2, "0")}</span>
       </div>
 
       <div className={styles.content}>
         <div className={styles.main}>
           <div className={styles.header}>
             <div className={styles.logoWrapper}>
-              <Image
-                src={project.logo}
-                alt={`${project.title} logo`}
-                width={18}
-                height={18}
-                className={styles.logo}
-              />
+              <Image src={project.logo} alt={`${project.title} logo`} width={18} height={18} className={styles.logo} />
             </div>
             <h3 className={styles.title}>{project.title}</h3>
           </div>
@@ -54,13 +43,17 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
         </div>
 
         <div className={styles.action}>
-          <span className={styles.link}>
-            View Project
+          <a className={styles.link} href={project.link} target="_blank" rel="noopener noreferrer">
+            Xem mã nguồn
             <VscLinkExternal size={12} />
-          </span>
+          </a>
+          <button className={styles.picture}>
+            Xem ảnh dự án
+            <VscFileMedia size={12} />
+             </button>
         </div>
       </div>
-    </a>
+    </div>
   );
 };
 
