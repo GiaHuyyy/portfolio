@@ -169,62 +169,16 @@ const AboutPage = () => {
             </div>
           </section>
 
-          {/* Writing Section */}
-          <section className={styles.section}>
-            <div className={styles.sectionHeader}>
-              <span className={styles.sectionNumber}>04</span>
-              <h2 className={styles.sectionTitle}>Writing</h2>
-            </div>
-
-            <div className={styles.sectionBody}>
-              <p className={styles.paragraph}>
-                I&apos;ve had the pleasure of writing for some amazing publications as a freelance technical author:
-              </p>
-
-              <div className={styles.writingLinks}>
-                <a
-                  href="https://www.100ms.live/blog/author/nitin"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.writingLink}
-                >
-                  <span>100ms Blog</span>
-                  <VscLinkExternal size={14} />
-                </a>
-
-                <a
-                  href="https://blog.logrocket.com/author/nitinranganath/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.writingLink}
-                >
-                  <span>LogRocket Blog</span>
-                  <VscLinkExternal size={14} />
-                </a>
-
-                <a
-                  href="https://dev.to/itsnitinr"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.writingLink}
-                >
-                  <span>DEV.to</span>
-                  <VscLinkExternal size={14} />
-                </a>
-              </div>
-            </div>
-          </section>
-
           {/* Beyond Code Section */}
           <section className={styles.section}>
             <div className={styles.sectionHeader}>
-              <span className={styles.sectionNumber}>05</span>
+              <span className={styles.sectionNumber}>04</span>
               <h2 className={styles.sectionTitle}>Khác</h2>
             </div>
 
             <div className={styles.sectionBody}>
               <p className={styles.paragraph}>
-                Ngoài lập trình và viết lách, tôi đang cải thiện kỹ năng tiếng anh, kỹ năng giao tiếp và làm việc nhóm. Tôi tin rằng kỹ năng mềm là yếu tố quan trọng để phát triển sự nghiệp bền vững trong ngành công nghệ.
+                Ngoài lập trình và viết lách, tôi đang cải thiện kỹ năng tiếng anh (hiện tại 615, mục tiêu 700), kỹ năng giao tiếp và làm việc nhóm. Tôi tin rằng kỹ năng mềm là yếu tố quan trọng để phát triển sự nghiệp bền vững trong ngành công nghệ.
               </p>
             </div>
           </section>
