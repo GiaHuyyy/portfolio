@@ -14,6 +14,8 @@ export interface Project {
   description: string;
   logo: string;
   link: string;
+  hasWeb?: boolean;
+  projectUrl?: string;
   tech: { icon: string; name: string }[];
   slug: string;
   images?: string[];

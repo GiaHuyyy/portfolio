@@ -150,10 +150,16 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
               Xem mã nguồn
               <VscLinkExternal size={12} />
             </a>
-            <button type="button" className={styles.picture} onClick={openGallery}>
+            <a type="button" className={styles.picture} onClick={openGallery}>
               Xem ảnh tổng quát dự án
               <VscFileMedia size={12} />
-            </button>
+            </a>
+            {project.hasWeb && project.projectUrl && (
+              <a className={styles.link} href={project.projectUrl} target="_blank" rel="noopener noreferrer">
+                Link demo
+                <VscLinkExternal size={12} />
+              </a>
+            )}
           </div>
         </div>
       </div>

@@ -7,6 +7,8 @@ export const projects: Project[] = [
       "Nền tảng chăm sóc sức khỏe răng miệng thông minh cho bác sĩ và bệnh nhân, đặt lịch, hồ sơ, tư vấn từ xa, thanh toán MoMo v.v.. Tích hợp phân tích AI và hỗ trợ đa nền tảng.",
     logo: "/logos/project1_icon.svg",
     link: "https://github.com/GiaHuyyy/Smart-dental-healthcare",
+    hasWeb: true,
+    projectUrl: "https://smartdentalhealthcare.id.vn",
     images: [
       "/projects/p1-0.png",
       "/projects/p1-1.png",
@@ -66,6 +68,8 @@ export const projects: Project[] = [
       "Ứng dụng nhắn tin thời gian thực đa nền tảng lấy ý tưởng từ 'Zalo' với Socket.IO, WebRTC và JWT v.v..",
     logo: "/logos/project2_icon.svg",
     link: "https://github.com/GiaHuyyy/CNM-ChatApp",
+    hasWeb: true,
+    projectUrl: "https://cnm-chat-app.vercel.app/auth",
     images: [
       "/projects/p2-0.png",
       "/projects/p2-1.png",
@@ -110,6 +114,7 @@ export const projects: Project[] = [
     description: "Ứng dụng kiểm tra sức khỏe cá nhân, theo dõi chỉ số và cung cấp gợi ý cải thiện lối sống.",
     logo: "/logos/project3_icon.svg",
     link: "https://github.com/GiaHuyyy/healthy-check-app",
+    hasWeb: false,
     images: [
       "/projects/p3-0.png",
       "/projects/p3-1.png",
@@ -146,6 +151,8 @@ export const projects: Project[] = [
     description: "Nền tảng thương mại điện tử theo kiến trúc microservice, hỗ trợ thanh toán và CI/CD.",
     logo: "/logos/project4_icon.svg",
     link: "https://github.com/ngophuc29/KT-TKPM_PROJECT",
+    hasWeb: true,
+    projectUrl: "https://example.com/ecommerce-microservices",
     images: [
       "/projects/p4-0.png",
       "/projects/p4-1.png",
