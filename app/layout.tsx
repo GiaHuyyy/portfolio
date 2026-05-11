@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: 'Tô Vũ Gia Huy | %s',
   },
   description:
-    "Tô Vũ Gia Huy is an avid full stack web developer building websites and applications you'd love to use",
+    "Tô Vũ Gia Huy is an avid full stack web/app developer building websites and applications you'd love to use",
   keywords: [
     'tô vũ gia huy',
     'tô vũ gia huy',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Tô Vũ Gia Huy's Portfolio",
     description:
-      "A full-stack developer building websites that you'd like to use.",
+      "A full-stack developer building websites and applications that you'd like to use.",
     // images: ['https://imgur.com/4zi5KkQ.png'],
     url: 'https://portfoliogiahuy.vercel.app',
   },
