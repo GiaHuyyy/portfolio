@@ -10,6 +10,7 @@ import Bottombar from "@/components/Bottombar";
 import Tabsbar from "@/components/Tabsbar";
 import Terminal from "@/components/Terminal";
 import CommandPalette from "@/components/CommandPalette";
+import MonthlyVisitsBadge from "@/components/MonthlyVisitsBadge";
 
 import styles from "@/styles/Layout.module.css";
 
@@ -44,6 +45,25 @@ const Layout = ({ children }: LayoutProps) => {
     const main = document.getElementById("main-editor");
     if (main) {
       main.scrollTop = 0;
+    }
+  }, [pathname]);
+
+  useEffect(() => {
+    if (process.env.NODE_ENV !== "production") return;
+    if (!pathname) return;
+
+    try {
+      const key = `pv:${pathname}`;
+      const alreadyCounted = sessionStorage.getItem(key);
+      if (alreadyCounted) return;
+
+      sessionStorage.setItem(key, "1");
+
+      fetch("/api/pageview", { method: "POST" }).catch(() => {
+        // Ignore analytics failures
+      });
+    } catch {
+      // sessionStorage may be blocked; fail silently
     }
   }, [pathname]);
 
@@ -122,6 +142,7 @@ const Layout = ({ children }: LayoutProps) => {
         </div>
       </div>
       <Bottombar onTerminalToggle={toggleTerminal} isTerminalOpen={isTerminalOpen} />
+      <MonthlyVisitsBadge />
       <CommandPalette
         isOpen={isCommandPaletteOpen}
         onClose={closeCommandPalette}

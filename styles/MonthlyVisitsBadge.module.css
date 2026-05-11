@@ -1,0 +1,40 @@
+.badge {
+  position: fixed;
+  right: 14px;
+  bottom: 44px;
+  z-index: 1100;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 10px;
+  border-radius: 8px;
+
+  background: var(--article-bg);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  font-size: 12px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.72);
+
+  user-select: none;
+}
+
+.label {
+  opacity: 0.9;
+}
+
+.value {
+  color: var(--accent-color);
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .badge {
+    right: 10px;
+    bottom: 52px;
+    font-size: 11px;
+  }
+}
