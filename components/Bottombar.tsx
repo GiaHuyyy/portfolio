@@ -9,8 +9,6 @@ import {
 import { SiNextdotjs } from 'react-icons/si';
 
 import styles from '@/styles/Bottombar.module.css';
-import MonthlyVisitsBadge from './MonthlyVisitsBadge';
-
 interface BottombarProps {
   onTerminalToggle: () => void;
   isTerminalOpen: boolean;
@@ -37,7 +35,6 @@ const Bottombar = ({ onTerminalToggle, isTerminalOpen }: BottombarProps) => {
         </div>
       </div>
       <div className={styles.container}>
-        <MonthlyVisitsBadge />
         <div
           className={`${styles.section} ${isTerminalOpen ? styles.active : ''}`}
           onClick={onTerminalToggle}

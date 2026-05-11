@@ -1,7 +1,5 @@
-import { Redis } from "@upstash/redis";
 import { NextResponse } from "next/server";
-
-const redis = Redis.fromEnv();
+import { redis } from "@/lib/redis";
 
 const getMonthKey = (date = new Date()) => {
   const year = date.getUTCFullYear();

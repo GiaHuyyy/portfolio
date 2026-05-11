@@ -23,12 +23,14 @@
 
 .label {
   opacity: 0.9;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .value {
   color: var(--accent-color);
   font-family: var(--font-mono);
   font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 @media (max-width: 640px) {
