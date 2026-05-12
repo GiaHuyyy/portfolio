@@ -20,14 +20,14 @@ export const metadata: Metadata = {
     'tô vũ gia huy web developer',
     'giahuy developer',
     'mern stack',
-    'giahuy ranganath portfolio',
-    'vscode-portfolio',
+    'giahuy portfolio',
+    'giahuy-portfolio',
   ],
   openGraph: {
     title: "Tô Vũ Gia Huy's Portfolio",
     description:
       "A full-stack developer building websites and applications that you'd like to use.",
-    // images: ['https://imgur.com/4zi5KkQ.png'],
+    images: ['https://res.cloudinary.com/daky9cjxu/image/upload/v1778575852/image_portfolio_nxirsd.png'],
     url: 'https://portfoliogiahuy.vercel.app',
   },
   twitter: {
